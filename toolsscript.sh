@@ -114,15 +114,15 @@ _5all() {
 # No.6 Environmental Variables
 ########
 
-mkdir "$DirectoryPath/Clipboard/"
+mkdir "$DirectoryPath/EnvironmentalVariables/"
 
 
 _6a() {
-   env | tee "$DirectoryPath/Clipboard/environment_variables.txt" 
+   env | tee "$DirectoryPath/EnvironmentalVariables/environment_variables.txt" 
 }
 
 _6b() {
-    set | tee "$DirectoryPath/Clipboard/environment_set.txt"
+    set | tee "$DirectoryPath/EnvironmentalVariables/environment_set.txt"
 }
 
 _6all() {
@@ -146,6 +146,12 @@ _7b() {
 
 _7c() {
     df -h | tee "$DirectoryPath/Mounted/df.txt"
+}
+
+_7all() {
+    _7a
+    _7b
+    _7c
 }
 
 ########
@@ -181,7 +187,7 @@ _8all() {
 # Misc
 ########
 
-all() {
+_all() {
     _2all
     _3all
     _4all
