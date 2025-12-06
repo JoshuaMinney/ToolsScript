@@ -4,9 +4,6 @@ DirectoryPath="$1"
 shift
 
 CommandsRan=("$@")
-########
-# No.1 RAM Dump
-########
 
 ########
 # No.2 Capture Network State
