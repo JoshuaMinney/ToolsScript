@@ -32,3 +32,4 @@ How to use:
 ./toolsscript.sh ...
 e.g ./toolscript.sh /saveFileLocation/ 2a 3b 4a 5all
 or ./toolsscript.sh /home/username/Downloads all
+ 
